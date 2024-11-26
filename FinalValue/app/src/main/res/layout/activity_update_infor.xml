@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_main"
+    tools:context=".Customer.UpdateActivity.UpdateInforActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_marginBottom="40sp"
+        app:cardCornerRadius="100dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/image_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sign_up" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chỉnh sửa thông tin cá nhân"
+        android:textColor="@color/element_main"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/name_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nhập họ tên"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="314dp"
+                android:layout_marginBottom="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/email_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:hint="Nhập email"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="119dp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of birth:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/date_birth_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:inputType="datetime"
+                android:hint="Ngày / Tháng / Năm"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="314dp"
+                android:layout_marginBottom="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_update_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:text="Chỉnh sửa thông tin"
+        app:cornerRadius="20sp" />
+</LinearLayout>

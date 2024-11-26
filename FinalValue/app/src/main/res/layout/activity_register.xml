@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    tools:context=".Customer.RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_marginBottom="40sp"
+        app:cardCornerRadius="100dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/image_reg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sign_up" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textColor="@color/element_main"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/name_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nhập họ tên"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="314dp"
+                android:layout_marginBottom="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/email_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:hint="Nhập email"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="119dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of birth:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/date_birth_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:inputType="datetime"
+                android:hint="Ngày / Tháng / Năm"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="314dp"
+                android:layout_marginBottom="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User name:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/username_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:hint="Nhập tên đăng nhập"
+                android:inputType="text"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="119dp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/password_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:hint="Nhập mật khẩu"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:inputType="textPassword"
+                android:textSize="15dp"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="237dp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm password:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/confirm_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="#E1E1E1"
+                android:ems="10"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="314dp"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:backgroundTint="@color/element_main"
+            android:text="Đăng ký"
+            app:cornerRadius="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Đã có tài khoản?"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/go_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:gravity="center"
+                android:text="Đăng nhập"
+                android:textStyle="bold"
+                android:textColor="@color/element_main"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

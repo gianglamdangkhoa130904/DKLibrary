@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_main"
+    tools:context=".Admin.UpdateActivity.UpdateBookActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/get_update_book_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tt_huu_nhan_so"/>
+    </androidx.cardview.widget.CardView>
+    <EditText
+        android:id="@+id/get_update_book_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:hint="Book ID" />
+    <EditText
+        android:id="@+id/get_update_book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:hint="Book Name" />
+
+    <EditText
+        android:id="@+id/get_update_book_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:hint="Book Author" />
+    <EditText
+        android:id="@+id/get_update_book_chapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:inputType="text"
+        android:hint="Number Of Chapter"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/get_update_book_description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:gravity="start"
+        android:inputType="text"
+        android:hint="Description Book"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_update_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Book"
+            android:layout_marginRight="50dp"/>
+        <Button
+            android:id="@+id/btn_delete_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Book"/>
+    </LinearLayout>
+
+</LinearLayout>

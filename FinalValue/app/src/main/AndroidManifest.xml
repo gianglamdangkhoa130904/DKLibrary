@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_manga"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_manga"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalValue"
+        tools:targetApi="31">
+        <activity
+            android:name=".Customer.ForgotPassword.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.ForgotPassword.ResetCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.ForgotPassword.InputGmailToResetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.PageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ListActivity.ListPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddActivity.AddPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ListActivity.ListChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.UpdateActivity.UpdateChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddActivity.AddChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.BookDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.DeleteActivity.DeleteCategoryOfBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddActivity.AddCategoryForBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.InforUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.UpdateActivity.UpdateBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddActivity.AddBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.UpdateActivity.UpdateAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddActivity.AddAdminAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.UpdateActivity.UpdateCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddActivity.AddCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.MainAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.UpdateActivity.UpdateInforActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Customer.StartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.SplashActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

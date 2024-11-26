@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/admin_account_btm_nav"
+        android:title="Admin"
+        android:icon="@drawable/ic_admin"/>
+    <item android:id="@+id/admin_customer_btm_nav"
+        android:title="Customer"
+        android:icon="@drawable/user_icon"/>
+    <item android:id="@+id/admin_category_btm_nav"
+        android:title="Category"
+        android:icon="@drawable/menu_icon" />
+    <item android:id="@+id/admin_book_btm_nav"
+        android:title="Book"
+        android:icon="@drawable/ic_book"
+        app:iconTint="@color/brown"/>
+    <item android:id="@+id/admin_bookCategory_btm_nav"
+        android:title="Book Category"
+        android:icon="@drawable/ic_search"
+        app:iconTint="@color/brown"/>
+
+</menu>

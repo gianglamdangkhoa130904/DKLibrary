@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    tools:context=".Admin.AddActivity.AddBookActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/get_add_book_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tt_dragon_ball"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/get_add_book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:hint="Book Name" />
+
+    <EditText
+        android:id="@+id/get_add_book_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:hint="Book Author" />
+    <EditText
+        android:id="@+id/get_add_book_chapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:inputType="number"
+        android:hint="Number Of Chapter"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/get_add_book_description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:ems="10"
+        android:background="@drawable/border"
+        android:gravity="start"
+        android:hint="Description Book"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btn_add_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Book"/>
+</LinearLayout>
